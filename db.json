@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "One Bite Cafe",
+      "email": "kuldeep@gmail.com",
+      "mobile": "9999999999",
+      "address": "New Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Lodhi Knights",
+      "email": "lodhi@gmail.com",
+      "mobile": "9999999999",
+      "address": "New Delhi"
+    },
+    {
+      "id": 3,
+      "name": "MBA Chia Wala",
+      "email": "mba@gmail.com",
+      "mobile": "9999999999",
+      "address": "New Delhi"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
