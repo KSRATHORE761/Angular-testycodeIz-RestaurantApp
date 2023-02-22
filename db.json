@@ -2,24 +2,28 @@
   "posts": [
     {
       "id": 1,
-      "name": "One Bite Cafe",
+      "name": "One bite cafe",
       "email": "kuldeep@gmail.com",
       "mobile": "9999999999",
-      "address": "New Delhi"
+      "address": "New Delhi",
+      "services": "Cake & Pastry"
     },
     {
       "id": 2,
       "name": "Lodhi Knights",
       "email": "lodhi@gmail.com",
       "mobile": "9999999999",
-      "address": "New Delhi"
-    },
+      "address": "New Delhi",
+      "services": "Chicken, Mutton"
+    }
+  ],
+  "user": [
     {
-      "id": 3,
-      "name": "MBA Chia Wala",
-      "email": "mba@gmail.com",
+      "name": "Kuldeep",
+      "email": "kuldeep@gmail.com",
       "mobile": "9999999999",
-      "address": "New Delhi"
+      "password": "123",
+      "id": 1
     }
   ],
   "comments": [],

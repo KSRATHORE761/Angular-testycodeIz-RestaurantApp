@@ -3,7 +3,8 @@
      <h2>Restaurant App</h2>
      <div class="d-flex">
         <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Restaurant</button>
-     </div>
+        <button routerLink="/login" class="btn btn-danger mx-3" type="button">Logout</button>
+      </div>
     </div>
   </nav>
 
@@ -34,7 +35,7 @@
           <td>{{data.email}}</td>
           <td>{{data.mobile}}</td>
           <td>{{data.address}}</td>
-          <td>{{data.Services}}</td>
+          <td>{{data.services}}</td>
           <td>
             <button (click)="onEditClick(data)" class="btn btn-info">Edit</button>
             &nbsp;
@@ -51,7 +52,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="onCloseClick()"></button>
         </div>
         <div class="modal-body">
             <form [formGroup]="formValue">
@@ -79,8 +80,9 @@
               </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary" (click)="addRestaurent()" >Add Details</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="onCloseClick()">Close</button>
+          <button type="submit" class="btn btn-primary" (click)="addRestaurent()" *ngIf="!this.isEdit">Add Details</button>
+          <button type="submit" class="btn btn-primary" (click)="updateRestaurentData()" *ngIf="this.isEdit" >Update Details</button>
         </div>
       </div>
     </div>

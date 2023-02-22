@@ -26,7 +26,7 @@ export class ApiService {
 
   //Update restaurent data using PUT method
   updateRestaurent(data:any,id:Number){
-    return this._http.put<any>("http://localhost:3000/posts"+id,data).pipe(map((res:any)=>{
+    return this._http.put<any>("http://localhost:3000/posts/"+id,data).pipe(map((res:any)=>{
       return res;
     }))
   }
